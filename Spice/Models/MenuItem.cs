@@ -1,5 +1,4 @@
-﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Spice.Models
@@ -12,9 +11,7 @@ namespace Spice.Models
         [Required]
         public string Name { get; set; }
         public string Description { get; set; }
-
-        public string Spicyness { get; set; }
-
+        public string Spiciness { get; set; }
         public string Image { get; set; }
 
         [Display(Name="Category")]
