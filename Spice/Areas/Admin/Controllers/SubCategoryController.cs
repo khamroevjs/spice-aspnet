@@ -28,6 +28,7 @@ namespace Spice.Areas.Admin.Controllers
             var subCategory = await db.SubCategory.Include(s => s.Category).ToListAsync();
             return View(subCategory);
         }
+
         public async Task<IActionResult> GetSubCategory(int? id)
         {
             var subCategories = new List<SubCategory>();

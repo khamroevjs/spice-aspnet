@@ -56,9 +56,10 @@
 			&copy; 2020 - Spice
 		</div>
 	</footer>
+	<script src="https://cdn.tiny.cloud/1/yyd9ec62s3boe5p6uigd8sob5w1efjzw1vj4vtu20o2zev9m/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 	<script src="~/lib/jquery/dist/jquery.min.js"></script>
 	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="~/js/site.js" asp-append-version="true"></script>
-	@RenderSection("Scripts", required: false)
+	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
