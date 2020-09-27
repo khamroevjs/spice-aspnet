@@ -101,8 +101,8 @@ namespace Spice.Areas.Admin.Controllers
         }
 
         // POST - Delete
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+        [HttpPost]
+        [ValidateAntiForgeryToken, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirmed(int? id)
         {
             var category = await db.Category.FindAsync(id);
