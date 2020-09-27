@@ -236,9 +236,6 @@ namespace Spice.Areas.Admin.Controllers
                 await db.SaveChangesAsync();
             }
 
-            db.MenuItem.Remove(MenuItemVM.MenuItem);
-            await db.SaveChangesAsync();
-
             return RedirectToAction(nameof(Index));
         }
         #endregion
